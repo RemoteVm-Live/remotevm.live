@@ -22,11 +22,11 @@
 	/* Lightmode white - Darker to lighter */
 	--lighttheme-1: #fff;
 	--lighttheme-2: #f3f3f3;
-	--lighttheme-3: #ddd;
-	--lighttheme-4: #ccc; /* primary */
-	--lighttheme-5: #bbb;
-	--lighttheme-6: #aaa;
-	--lighttheme-7: #7e7e7e;
+	--lighttheme-3: #2793ff;
+	--lighttheme-4: #2793ff; /* primary */
+	--lighttheme-5: #74b9ff;
+	--lighttheme-6: #74b9ff;
+	--lighttheme-7: #26c7ff;
 	--lighttheme-8: #373737;
 	--lighttheme-text: black;
 
@@ -42,7 +42,7 @@
 	--a-darker-visited: #b9dff9;
 	--a-darker-hover: #048ae8;
 	--a-darker-focus: #d9e4eb;
-	--a-darker-active: #d9e4eb;
+	--a-darker-active: #b2c9d7;
 
 	--a-lighter-link: #9ed0e1;
 	--a-lighter-visited: #9ed0e1;
@@ -57,11 +57,11 @@
 	--a-active: #0165b5;
 
 	/* -- Box colors */
-	--director-box: rgb(165 119 18);
+	--director-box: rgb(18 165 150);
 	--codirector-box: rgb(67 122 213);
 
-	--director-dark-box: rgb(165 119 18);
-	--codirector-dark-box: rgb(129 127 127);
+	--director-dark-box: rgb(18 165 150);
+	--codirector-dark-box: rgb(0 187 255);
 	
 	--widget-width: 25%;
 	--rtl-or-ltr: left;
@@ -73,7 +73,7 @@
 	--button-color: #2A2A2A;
 	--blue-accent: #4a4c63;
 	--red-accent: #553737;
-	--light-grey: #ddd;
+	--light-grey: #2793ff;
 	--near-black: #02050c;
 	--green-accent: #3f4f50;
 	--olive-accent: #535D32;
