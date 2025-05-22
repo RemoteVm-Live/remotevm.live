@@ -1,7 +1,7 @@
 {
   "innerHTML": {
     "logo-header": "<font id=\"qos\">V</font>DO.Ninja ",
-    "copy-this-url": "این URL را در «منبع مرورگر» خود کپی کنید",
+    "copy-this-url": "این URL را در «مرورگر» خود کپی کنید",
     "you-are-in-the-control-center": "مرکز کنترل برای اتاق:",
     "joining-room": "شما در اتاق هستید",
     "only-director-can-hear-you": "در حال حاضر فقط کارگردان می‌تواند شما را بشنود.",
@@ -259,7 +259,7 @@
     "read-the-guides": "مطالعه راهنماها",
     "wizard-link-generator": "تولیدکننده لینک جادویی",
     "get-full-documentation": "مستندات کامل",
-    "get-the-source-code": "کد منبع",
+    "get-the-source-code": "branch",
     "show-your-support": "حمایت خود را نشان دهید",
     "publish-via-whip": "انتشار از طریق WHIP",
     "share-whepsrc": "اشتراک از طریق WHEP",
