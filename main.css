@@ -163,7 +163,7 @@ table {
 	margin:0 auto;
 	background-color: #0000;
 	cursor:pointer;
-	font-family: Cousine, monospace;
+	font-family: 'Vazirmatn', sans-serif;
 	font-size: 4em;
 	line-height: 1.5em;
 	letter-spacing: 0.0em;
@@ -685,7 +685,7 @@ button.hint {
 	margin: 0 auto;
 	background-color: #0000;
 	color: white;
-	font-family: Cousine, monospace;
+	font-family: 'Vazirmatn', sans-serif;
 	font-size: calc(6vh + 6vw / 2);
 	letter-spacing: 0.0em;
 	text-shadow: 0.05em 0.05em 0px rgb(0 0 0);
@@ -740,7 +740,7 @@ button.hint {
 	margin: 0 auto;
 	background-color: #0000;
 	color: white;
-	font-family: Cousine, monospace;
+	font-family: 'Vazirmatn', sans-serif;
 	font-size: calc(3vh + 3vw / 2);
 	letter-spacing: 0.0em;
 	text-shadow: 0.05em 0.05em 0px rgb(0 0 0);
@@ -790,7 +790,7 @@ button.hint {
 	margin:0 auto;
 	background-color: #0000;
 	color: white;
-	font-family: Cousine, monospace;
+	font-family: 'Vazirmatn', sans-serif;
 	font-size: 6vh;
 	line-height: 8vh;
 	letter-spacing: 0.0em;
@@ -827,7 +827,7 @@ button.hint {
 	margin:0 auto;
 	background-color: #0000;
 	color: white;
-	font-family: Cousine, monospace;
+	font-family: 'Vazirmatn', sans-serif;
 	font-size: 6vh;
 	line-height: 8vh;
 	letter-spacing: 0.0em;
