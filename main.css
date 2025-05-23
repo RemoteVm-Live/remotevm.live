@@ -6278,21 +6278,27 @@ button.toggleSettings,
  * Below lsits the classes and font styles for the font-awesome icons.
  */
 
+/* تعریف فونت Vazirmatn */
 @font-face {
-	font-family: 'Vazirmatn';
-	src: url('fonts/vazirmatn/Vazirmatn-Regular.woff2') format('woff2'),
-	     url('fonts/vazirmatn/Vazirmatn-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'Vazirmatn';
+  src: url("lineawesome/fonts/vazirmatn/Vazirmatn-Bold.woff2") format('woff2'),
+       url("lineawesome/fonts/vazirmatn/Vazirmatn-Bold.woff") format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: auto;
 }
+
+/* تعریف فونت Line Awesome */
 @font-face {
-	font-family: 'Vazirmatn';
-	src: url('fonts/vazirmatn/Vazirmatn-Bold.woff2') format('woff2'),
-	     url('fonts/vazirmatn/Vazirmatn-Bold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
+  font-family: 'Line Awesome Free';
+  src: url("lineawesome/fonts/la-solid-900.eot?#iefix") format("embedded-opentype"),
+       url("lineawesome/fonts/la-solid-900.woff2") format("woff2"),
+       url("lineawesome/fonts/la-solid-900.woff") format("woff"),
+       url("lineawesome/fonts/la-solid-900.ttf") format("truetype"),
+       url("lineawesome/fonts/la-solid-900.svg#lineawesome") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: auto;
 }
 
 .las {
