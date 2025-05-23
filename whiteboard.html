@@ -279,7 +279,7 @@
 	
     <div class="modal-overlay">
 		<div class="modal">
-			<h3 style="text-align: center; margin-bottom: 15px;">Whiteboard Publishing Options</h3>
+			<h3 style="text-align: center; margin-bottom: 15px;">Whiteboard روش انتشار</h3>
 			<div class="modal-buttons">
 				<button onclick="showMode('vdo')" title="Peer-to-peer encrypted streaming via VDO.Ninja">VDO.Ninja</button>
 				<button onclick="showMode('whip')" title="Stream to any WHIP-compatible service">WHIP</button>
@@ -294,7 +294,7 @@
                     <input type="text" id="pushId" placeholder="Leave empty for auto-generated ID">
                 </div>
                 <div class="input-group">
-                    <label>Room Name (optional if Stream ID provided)</label>
+                    <label>Room نام (optional if Stream ID provided)</label>
                     <input type="text" id="roomName">
                 </div>
                 <div class="input-group">
@@ -391,7 +391,7 @@
 		document.querySelector(`button[onclick="showMode('${mode}')"]`).classList.add('active');
 		
 		const descriptions = {
-			'vdo': 'Stream securely peer-to-peer using VDO.Ninja',
+			'vdo': 'Stream securely peer-to-peer using Live.Remote.ir',
 			'whip': 'Stream to any WHIP-compatible service',
 			'twitch': 'Stream directly to your Twitch channel',
 			'playground': 'Local drawing mode - no streaming'
