@@ -23,7 +23,7 @@
 	--lighttheme-1: #fff;
 	--lighttheme-2: #DDf3f3;
 	--lighttheme-3: #2793ff;
-	--lighttheme-4: #2793ff; /* primary */
+	--lighttheme-4: #527aa3; /* primary */
 	--lighttheme-5: #74b9ff;
 	--lighttheme-6: #74b9ff;
 	--lighttheme-7: #65a0db;
@@ -61,7 +61,7 @@
 	--codirector-box: rgb(67 122 213);
 
 	--director-dark-box: rgb(18 165 150);
-	--codirector-dark-box: rgb(0 187 255);
+	--codirector-dark-box: rgb(104, 153, 171);
 	
 	--widget-width: 25%;
 	--rtl-or-ltr: right;
