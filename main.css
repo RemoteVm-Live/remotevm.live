@@ -2591,12 +2591,12 @@ span[data-action-type="stats-graphs-details-container"]>span{
     font-size: 120%;
     margin: 16px;
     animation: pulsate 2s ease-out infinite;
-	background-color: #26e726 !important;
-    background: radial-gradient(#26e726, #2EeF2E);
+	background-color: #e72659 !important;
+    background: radial-gradient(#e72659, #2EeF2E);
     box-shadow: 1px 1px 1px;
 	color: black !important;
-	background-color: #26e726 !important;
-    background: radial-gradient(#26e726, #2EeF2E);
+	background-color: #e72659 !important;
+    background: radial-gradient(#e72659, #2EeF2E);
 	font-weight: bold !important;
     box-shadow: 0 0 31px 0px #244e1c44;
     animation: pulsate 2s ease-out infinite;
