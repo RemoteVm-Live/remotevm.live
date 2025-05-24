@@ -23,10 +23,10 @@
 	--lighttheme-1: #fff;
 	--lighttheme-2: #DDf3f3;
 	--lighttheme-3: #2793ff;
-	--lighttheme-4: #2793ff; /* primary */
+	--lighttheme-4: #527aa3; /* primary */
 	--lighttheme-5: #74b9ff;
 	--lighttheme-6: #74b9ff;
-	--lighttheme-7: #26c7ff;
+	--lighttheme-7: #65a0db;
 	--lighttheme-8: #373737;
 	--lighttheme-text: black;
 
@@ -61,7 +61,7 @@
 	--codirector-box: rgb(67 122 213);
 
 	--director-dark-box: rgb(18 165 150);
-	--codirector-dark-box: rgb(0 187 255);
+	--codirector-dark-box: rgb(104, 153, 171);
 	
 	--widget-width: 25%;
 	--rtl-or-ltr: right;
@@ -1748,11 +1748,11 @@ body.darktheme{
 	padding: 10px 50px;
 }
 .gowebcam:enabled {
-	background-color: #26e726 !important;
-	background: radial-gradient(#26e726, #2EeF2E);
+	background-color: #ff66f2 !important;
+	background: radial-gradient(#ff66f2, #e726a0);
 	color: black!important;
 	font-weight: bold !important;
-	box-shadow: 0 0 31px 0px #244e1c44;
+	box-shadow: 0 0 31px 0px #732259;
 	animation: pulsate 2s ease-out infinite; 
 }
 #mainmenu {
@@ -2591,14 +2591,14 @@ span[data-action-type="stats-graphs-details-container"]>span{
     font-size: 120%;
     margin: 16px;
     animation: pulsate 2s ease-out infinite;
-	background-color: #26e726 !important;
-    background: radial-gradient(#26e726, #2EeF2E);
+	background-color: #ff8ae2 !important;
+    background: radial-gradient(#ff5ce7, #ff8ae2);
     box-shadow: 1px 1px 1px;
 	color: black !important;
-	background-color: #26e726 !important;
-    background: radial-gradient(#26e726, #2EeF2E);
+	background-color: #e72659 !important;
+    background: radial-gradient(#fa4bce, #9c4185);
 	font-weight: bold !important;
-    box-shadow: 0 0 31px 0px #244e1c44;
+    box-shadow: 0 0 31px 0px #8a1e6f;
     animation: pulsate 2s ease-out infinite;
 }
 .screenshare-container {
@@ -6278,14 +6278,29 @@ button.toggleSettings,
  * Below lsits the classes and font styles for the font-awesome icons.
  */
 
+/* تعریف فونت Vazirmatn */
 @font-face {
-	font-family: 'Line Awesome Free';
-	font-style: normal;
-	font-weight: 900;
-	font-display: auto;
-	src: url("lineawesome/fonts/la-solid-900.eot");
-	src: url("lineawesome/fonts/la-solid-900.eot?#iefix") format("embedded-opentype"), url("lineawesome/fonts/la-solid-900.woff2") format("woff2"), url("lineawesome/fonts/la-solid-900.woff") format("woff"), url("lineawesome/fonts/la-solid-900.ttf") format("truetype"), url("lineawesome/fonts/la-solid-900.svg#lineawesome") format("svg"); 
+  font-family: 'Vazirmatn';
+  src: url("lineawesome/fonts/vazirmatn/Vazirmatn-Bold.woff2") format('woff2'),
+       url("lineawesome/fonts/vazirmatn/Vazirmatn-Bold.woff") format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: auto;
 }
+
+/* تعریف فونت Line Awesome */
+@font-face {
+  font-family: 'Line Awesome Free';
+  src: url("lineawesome/fonts/la-solid-900.eot?#iefix") format("embedded-opentype"),
+       url("lineawesome/fonts/la-solid-900.woff2") format("woff2"),
+       url("lineawesome/fonts/la-solid-900.woff") format("woff"),
+       url("lineawesome/fonts/la-solid-900.ttf") format("truetype"),
+       url("lineawesome/fonts/la-solid-900.svg#lineawesome") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: auto;
+}
+
 .las {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
