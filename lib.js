@@ -38395,7 +38395,7 @@ async function requestBasicPermissions(constraint = { video: true, audio: true }
 											false
 										);
 									} else {
-										warnUser("Permission access to the camera or microphone was denied.\n\nPlease ensure you have allowed the mic/camera permissions in your browser.\n\nFor guides on how to resolve this issue, please refer to:\n\n<a target='_blank' href='https://about.remotevm.ir'>https://about.remotevm.ir</a>.", false, false);
+										warnUser("مجوزهای دوربین/میکروفون داده نشده.\n\nلطفاً مطمئن شوید که مجوزهای میکروفون/دوربین را در مرورگر خود فعال کرده‌اید\n\nFor guides on how to resolve this issue, please refer to:\n\n<a target='_blank' href='https://about.remotevm.ir'>https://about.remotevm.ir</a>.", false, false);
 									}
 								}, 1);
 							}
