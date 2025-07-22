@@ -526,7 +526,6 @@ a {
 .darktheme .infoblob {
     background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(40, 40, 60, 0.9));
     border: 2px solid #ff00ff;
-	margin-top: 23px;
     box-shadow: 0 0 15px #ff00ff, 0 0 30px rgba(255, 0, 255, 0.5);
 }
 
@@ -884,7 +883,7 @@ button.hint:hover {
 }
 
 #head5 {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: white;
     text-align: right;
@@ -1178,7 +1177,7 @@ body.darktheme .credits > a:visited {
     float: left;
     font-size: 1.2em;
     color: white;
-    display: block;
+    display: inline-block;
     position: absolute;
     bottom: 0;
     align-self: center;
@@ -2083,7 +2082,7 @@ div[data-action-type='toggle-group'] {
 .infoblob {
     color: skyblue;
     width: 100%;
-	margin-top: 76px;
+	margin-top: 56px;
     padding: 20px;
     max-width: 1280px;
     line-height: 2em;
@@ -2814,8 +2813,8 @@ label {
 }
 .fullcolumn {
 	float: left;
-	display: block;
-	margin: 3 auto;
+	display: inline-block;
+	margin: 0 auto;
 	width: 100%;
 	text-align: center;
 }
