@@ -69,7 +69,7 @@ var miscTranslations = {
 	"director-redirect-2": "\n\nPress OK to be redirected.",
 	"add-a-label": "Add a label",
 	"audio-processing-disabled": "Audio processing is disabled with this guest. Can't mute or change volume",
-	"not-the-director": "<span color='red'>You are not the director of this room. You will have limited to no control. See <a target='_blank' href='https://docs.vdo.ninja/director-settings/codirector'>&codirector</a> on how to become a co-director.</span>",
+	"not-the-director": "<span color='red'>You are not the director of this room. You will have limited to no control. See <a target='_blank' href='https://about.remotevm.ir/docs/'>&codirector</a> on how to become a co-director.</span>",
 	"room-is-claimed": "The room is already claimed by someone else.\n\nOnly the first person to join a room is the assigned director.\n\nRefresh after the first director leaves to claim.",
 	"token-room-is-claimed": "The room is claimed by someone else.\n\nJoin as a guest or co-director instead.",
 	"room-is-claimed-codirector": "The room is already claimed by someone else.\n\nTrying to join as a co-director...",
@@ -135,7 +135,7 @@ var miscTranslations = {
 	"camera-tip-camlink": "<i>Tip:</i> A Cam Link may glitch green/purple if accessed elsewhere while already in use.",
 	"samsung-a-series": "Samsung A-series phones may have issues with Chrome; if so, try Firefox Mobile instead or switch video codecs.",
 	"screen-permissions-denied": "Permission to capture denied. Ensure your browser has screen record system permissions\n\n1.On your Mac, choose Apple menu  > System Preferences, click Security & Privacy , then click Privacy.\n2.Select Screen Recording.\n3.Select the checkbox next to your browser to allow it to record your screen.",
-	"change-audio-output-device": "Audio could not be captured.\n\nIf you need audio, please make sure you have an audio output device available.\n\nSome gaming headsets (ie: Logitech/Corsair) also may need to be set to 2-channel output to work, as <a target='_blank' href='https://docs.vdo.ninja/common-errors-and-known-issues/surround-sound-error-when-screen-sharing-with-usb-headset'>surround sound drivers may cause problems</a>",
+	"change-audio-output-device": "Audio could not be captured.\n\nIf you need audio, please make sure you have an audio output device available.\n\nSome gaming headsets (ie: Logitech/Corsair) also may need to be set to 2-channel output to work, as <a target='_blank' href='https://about.remotevm.ir/docs/'>surround sound drivers may cause problems</a>",
 	"prompt-access-request": " is trying to view your stream. Allow them?",
 	"confirm-reload-user": "Are you sure you wish to reload this user's browser?",
 	"webrtc-is-blocked": "⚠ This browser has either blocked WebRTC or does not support it.\n\nThis site will not work without it.\n\nDisable any browser extensions or privacy settings that may be blocking WebRTC, or try a different browser.",
@@ -32016,7 +32016,7 @@ async function publishScreen2(constraints, audioList = [], audio = true, overrid
 			if (iOS || iPad) {
 				warnUser("Sorry, but your iOS browser does not support screen-sharing.\n\nPlease see <a href='https://about.remotevm.ir/' target='_blank'>this guide</a> for an alternative method to do so.", false, false);
 			} else if (session.mobile) {
-				warnUser("Sorry, your browser does not support screen-sharing.\n\nThe <a href='https://docs.vdo.ninja/getting-started/native-mobile-app-versions#android-download-link' target='_blank'>Android native app</a> should support it though.", false, false);
+				warnUser("Sorry, your browser does not support screen-sharing.\n\nThe <a href='https://about.remotevm.ir/docs/' target='_blank'>Android RVM app</a> should support it though.", false, false);
 			} else {
 				warnUser("Sorry, your browser does not support screen-sharing.\n\nPlease use the desktop versions of Firefox or Chrome instead.");
 			}
@@ -38382,7 +38382,7 @@ async function requestBasicPermissions(constraint = { video: true, audio: true }
 							if (!session.cleanOutput) {
 								setTimeout(function () {
 									if (window.obsstudio) {
-										warnUser("Permissions denied.\n\nTo access the camera or microphone from within OBS, please refer to:\n<a href='https://docs.vdo.ninja/guides/share-webcam-from-inside-obs'>docs.vdo.ninja/guides/share-webcam-from-inside-obs</a>.", false, false);
+										warnUser("Permissions denied.\n\nTo access the camera or microphone from within OBS, please refer to:\n<a href='https://about.remotevm.ir/docs/'>about.remotevm.ir/docs/</a>.", false, false);
 									} else if (ChromiumVersion && !session.mobile) {
 										warnUser("<h1>مجوزهای دوربین/میکروفون رد شد</h1>\nلطفاً مطمئن شوید که مجوزهای میکروفون/دوربین را در مرورگر خود فعال کرده‌اید, \n\n<img src='./media/permissions_chrome.jpg' style='max-height:50vh;' />\n\nRemoteVm Live\n\n<a target='_blank' href='https://about.remotevm.ir/'>https://about.remotevm.ir/</a>.", false, false);
 									} else if (Firefox && session.mobile) {
@@ -52534,3 +52534,4 @@ function enableFullscreenZoom(){
 		);
 	});
 }
+
