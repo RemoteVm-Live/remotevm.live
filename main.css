@@ -489,25 +489,24 @@ a {
 }
 
 .infoblob:hover {
-    box-shadow: 0 0 25px #ff00ff, 0 0 50px rgba(255, 0, 255, 0.7);
+
     transform: translateY(-5px);
 }
 
 .infoblob a:link {
     color: #f0ffff;
     text-decoration: none;
-    text-shadow: 0 0 8px #00f7ff;
+
     transition: all 0.3s ease;
 }
 
 .infoblob a:visited {
     color: #ff00ff;
-    text-shadow: 0 0 8px #ff00ff;
+
 }
 
 .infoblob a:hover {
     color: #ffffff;
-    text-shadow: 0 0 12px #ffffff, 0 0 20px #ff00ff;
     transform: scale(1.05);
     display: inline-block;
 }
@@ -515,7 +514,7 @@ a {
 .infoblob a:focus {
     color: #ffffff;
     outline: none;
-    text-shadow: 0 0 15px #ffffff, 0 0 25px #00f7ff;
+
 }
 
 .infoblob a:active {
@@ -526,7 +525,7 @@ a {
 .darktheme .infoblob {
     background: linear-gradient(135deg, rgba(20, 20, 20, 0.9), rgba(40, 40, 60, 0.9));
     border: 2px solid #ff00ff;
-    box-shadow: 0 0 15px #ff00ff, 0 0 30px rgba(255, 0, 255, 0.5);
+
 }
 
 .darktheme .infoblob:hover {
