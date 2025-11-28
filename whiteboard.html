@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>RemoteVM Whiteboard - تخته سفید آنلاین</title>
     <meta name="theme-color" content="#0f172a">
-    
+    <meta http-equiv="Content-Security-Policy" content="frame-src https://vdo.ninja;">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23fff' x='10' y='10' width='80' height='80' rx='8'/></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
     
@@ -1127,6 +1127,7 @@
                     this.updateResetButtonVisibility();
                 }
                 
+                
                 // Window resize
                 window.addEventListener('resize', () => this.constrainToBoundary());
             }
@@ -1796,96 +1797,74 @@
         }
 
         /* =============================================
-           Streaming
+           Streaming - اصلاح شده برای vdo.ninja
            ============================================= */
-        let streamIframe = null;
+        let directorPeer = null;
+        let sendChannel = null;
         let frameInterval = null;
-
+        
         function startStream(config) {
             State.streamConfig = config;
-            
+        
             if (config.mode === 'offline') {
                 State.isStreaming = false;
                 updateStatus('آفلاین', false);
                 return;
             }
-            
-            const url = new URL('./index.html', window.location.href);
-            if (config.room) url.searchParams.set('room', config.room);
-            if (config.push) url.searchParams.set('push', config.push);
-            if (config.password) url.searchParams.set('password', config.password);
-            url.searchParams.set('framegrab', '');
-            url.searchParams.set('view', '');
-            
-            streamIframe = document.createElement('iframe');
-            streamIframe.style.cssText = 'width:0;height:0;position:absolute;visibility:hidden;';
-            streamIframe.src = url.toString();
-            streamIframe.allow = 'camera;microphone;display-capture;fullscreen;autoplay;';
-            
-            streamIframe.onload = () => {
-                setTimeout(() => {
-                    if (typeof MediaStreamTrackProcessor === 'function') {
-                        streamWithProcessor();
-                    } else {
-                        streamWithDataUrl();
-                    }
-                }, 100);
-            };
-            
-            document.body.appendChild(streamIframe);
-            
-            const viewUrl = new URL('./', window.location.href);
+        
+            // ساخت لینک viewer
+            const baseUrl = window.location.origin + window.location.pathname;
+            const viewUrl = new URL(baseUrl);
             if (config.push) viewUrl.searchParams.set('view', config.push);
             if (config.room) viewUrl.searchParams.set('room', config.room);
-            if (config.push && config.room) viewUrl.searchParams.set('solo', '');
             if (config.password) viewUrl.searchParams.set('password', config.password);
-            viewUrl.searchParams.set('sharperscreen', '');
-            
+        
             $('#viewLinkInput').value = viewUrl.toString();
             $('#shareBox').classList.add('share-box--visible');
-            
-            State.isStreaming = true;
-            updateStatus('در حال استریم', true);
-            
-            localStorage.setItem('wb_push', config.push || '');
-            localStorage.setItem('wb_room', config.room || '');
-        }
-
-        async function streamWithProcessor() {
-            const stream = canvas.captureStream(30);
-            const track = stream.getVideoTracks()[0];
-            track.contentHint = 'detail';
-            
-            const processor = new MediaStreamTrackProcessor(track);
-            const reader = processor.readable.getReader();
-            
-            while (true) {
-                const { done, value } = await reader.read();
-                if (done) break;
-                try {
-                    if (streamIframe?.contentWindow) {
-                        streamIframe.contentWindow.postMessage({ type: 'canvas-frame', frame: value }, '*');
-                    }
-                } finally {
-                    value.close();
+        
+            // اتصال به عنوان Director به vdo.ninja
+            const directorUrl = new URL('https://vdo.ninja/alpha/director');
+            directorUrl.searchParams.set('push', config.push || generateId(8));
+            if (config.room) directorUrl.searchParams.set('room', config.room);
+            if (config.password) directorUrl.searchParams.set('password', config.password);
+            directorUrl.searchParams.set('autostart', '');
+            directorUrl.searchParams.set('noanal', '');
+        
+            const directorIframe = document.createElement('iframe');
+            directorIframe.style.display = 'none';
+            directorIframe.src = directorUrl.toString();
+            document.body.appendChild(directorIframe);
+        
+            // اتصال WebRTC واقعی به عنوان director
+            window.addEventListener('message', async (e) => {
+                if (e.origin !== 'https://vdo.ninja') return;
+                if (e.data === 'director-ready') {
+                    startCanvasStreaming();
+                    updateStatus('در حال استریم', true);
+                    State.isStreaming = true;
+                    localStorage.setItem('wb_push', config.push || '');
+                    localStorage.setItem('wb_room', config.room || '');
                 }
+            });
+        
+            // ارسال فریم‌های canvas به vdo.ninja
+            function startCanvasStreaming() {
+                const stream = canvas.captureStream(25); // 25fps کافیه
+                const videoTrack = stream.getVideoTracks()[0];
+                videoTrack.contentHint = 'detail';
+        
+                // ارسال از طریق postMessage به iframe اصلی vdo.ninja
+                frameInterval = setInterval(() => {
+                    if (directorIframe.contentWindow) {
+                        directorIframe.contentWindow.postMessage({
+                            type: 'addvideostream',
+                            stream: stream
+                        }, 'https://vdo.ninja', [videoTrack]);
+                        clearInterval(frameInterval); // فقط یک بار
+                    }
+                }, 500);
             }
         }
-
-        function streamWithDataUrl() {
-            frameInterval = setInterval(() => {
-                if (streamIframe?.contentWindow) {
-                    const data = canvas.toDataURL('image/webp', 0.8);
-                    streamIframe.contentWindow.postMessage({ type: 'canvas-frame', frame: data }, '*');
-                }
-            }, 100);
-        }
-
-        function updateStatus(text, streaming) {
-            $('#statusText').textContent = text;
-            $('#statusDot').className = streaming ? 'status-indicator__dot' : 'status-indicator__dot status-indicator__dot--offline';
-        }
-
         /* =============================================
         /* =============================================
            Tools & UI
