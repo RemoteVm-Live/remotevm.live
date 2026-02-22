@@ -264,7 +264,7 @@
     "publish-via-whip": "Publish via WHIP",
     "share-whepsrc": "Share via WHEP",
     "enter-the-whep-URL-you-wish-to-share": "Enter the WHEP URL you wish to share.",
-    "info-blob": "<h2>🚀 Live.RemoteVm (Live.RemoteVm.ir) 🎥</h2><br><ul><li>✅ <b>مناسب برای لایو استریم، آزمون‌های آنلاین و آموزش از راه دور</b>؛ بدون نیاز به نصب برنامه، ثبت‌نام یا وارد کردن اطلاعات شخصی 🔐</li><li>📡 ارسال و دریافت ویدیوی زنده از طریق گوشی، لپ‌تاپ یا دسکتاپ —  OBS Studio 🎛️</li><li>🛡️ حفظ حریم خصوصی + ⏱️ تأخیر بسیار پایین با تکنولوژی پیشرفته </li></ul><br><p>✨ تجربه‌ای نو از استریم سریع، ایمن و بدون مرز —  Live.RemoteVm  🌐⚡</p><br><h3>🧰 برای پشتیبانی و کنترل ریموت آزمون‌ها، به <a href=\"https://RemoteVm.site/\" target=\"_blank\">Remote Vm وب‌سایت<i class=\"lab la-reddit-alien\"></i></a> مراجعه کنید 📘</h3>",
+    "info-blob": "\n<h2>Co je VDO.Ninja</h2><br>\n<li>100% <b>zdarma</b>; bez stahování; žádné osobní data; bez přihlašování</li>\n<li>Sdílejte video ze smartphonu, laptopu, počítače či svých kamarádů přímo do OBSka</li>\n<li>Používáme nejmodernější Peer-to-Peer forwarding technologii, která zaručuje bezpečnost a minimální lag</li>\n<br>\n<li>Youtube video <i class=\"fa fa-youtube-play\" aria-hidden=\"true\"></i> <a href=\"https://www.youtube.com/watch?v=QaA_6aOP9z8&amp;list=PLWodc2tCfAH1WHjl4WAOOoRSscJ8CHACe&amp;index=1\">Demo</a> </li>\n<h3>🛠 For support, see the <a href=\"https://www.reddit.com/r/VDONinja/\">sub-reddit <i class=\"lab la-reddit-alien\"></i></a> or join the <a href=\"https://discord.vdo.ninja/\">Discord <i class=\"lab la-discord\"></i></a>. The <a href=\"https://docs.vdo.ninja/\">documentation is here</a> and my personal email is <i>steve@seguin.email</i></h3>",
     "guest-1": "Guest 1",
     "guest-2": "Guest 2",
     "guest-3": "Guest 3",
@@ -714,7 +714,7 @@
     "webrtc-is-blocked": "⚠ This browser has either blocked WebRTC or does not support it.\n\nThis site will not work without it.\n\nDisable any browser extensions or privacy settings that may be blocking WebRTC, or try a different browser.",
     "not-clean-session": "Video effects or canvas rendering failed.\n\nCheck to ensure any remotely hosted images are cross-origin allowed.",
     "ios-no-screen-share": "Sorry, but your iOS browser does not support screen-sharing.\n\nPlease see <a href='https://docs.vdo.ninja/guides/screen-share-your-iphone-ipad' target='_blank'>this guide</a> for an alternative method to do so.",
-    "android-no-screen-share": "Sorry, your mobile browser does not support screen-sharing.\n\nThe <a href='https://about.remotevm.ir/docs/' target='_blank'>Android native app</a> does offer basic support for it though.",
+    "android-no-screen-share": "Sorry, your mobile browser does not support screen-sharing.\n\nThe <a href='https://docs.vdo.ninja/getting-started/native-mobile-app-versions' target='_blank'>Android native app</a> does offer basic support for it though.",
     "no-screen-share-supported": "Sorry, your browser does not support screen-sharing.\n\nPlease use the desktop versions of Firefox or Chrome instead.",
     "speech-not-suppoted": "⚠ Speech Recognition is not supported by this browser",
     "blue-yeti-tip": "<i>Tip:</i> Blue Yeti microphones may experience issues being overly loud. <a href='https://support.google.com/chrome/thread/7542181?hl=en&msgid=79691143'>Please see here</a> for a solution or disable auto-gain in VDO.Ninja.",
@@ -754,7 +754,7 @@
     "streamid-already-published-obvious": "The stream ID you are publishing to is already in use.\n\nPlease consider using a password or a more varied/unique stream ID to avoid this issue.\n\nYou will now be disconnected.",
     "what-bitrate-gdrive": "This remote guest will save the recording directly to their local disk, as well as send a copy to your Google Drive (recordings folder).\n\n - The recording can fail however, so have backup recordings going!\n\n - Guests using iPhones, Androids, or Safari will often have issues - bewarned.",
     "insecure-stream-id": "⚠️ Insecure stream ID detected\n\nIt is strongly advised that a password is used if using a short non-unique stream ID.\n\nThis is just a warning that can be ignored.",
-    "mobile-no-screen-share": "Sorry, your mobile browser does not support screen-sharing.\n\nThe <a href='https://about.remotevm.ir/docs/' target='_blank'>The native apps</a> do offer basic support for it though.",
+    "mobile-no-screen-share": "Sorry, your mobile browser does not support screen-sharing.\n\nThe <a href='https://docs.vdo.ninja/getting-started/native-mobile-app-versions' target='_blank'>The native apps</a> do offer basic support for it though.",
     "no-screen-share-supported-firefox": "Sorry, your browser does not support screen-sharing.\n\nYour Firefox settings may be configured to block it or you've accessed the site insecurely."
   }
 }

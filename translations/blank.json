@@ -194,7 +194,7 @@
     "add-to-outlook-calendar": "افزودن به تقویم اوت‌لوک",
     "add-to-yahoo-calendar": "افزودن به تقویم یاهو",
     "reload-page": "بارگذاری مجدد",
-    "welcome-to-RVM-chat": "خوش آمدید! می‌توانید از اینجا پیام‌های متنی را مستقیماً به همتایان متصل ارسال کنید.",
+    "welcome-to-vdo-ninja-chat": "خوش آمدید! می‌توانید از اینجا پیام‌های متنی را مستقیماً به همتایان متصل ارسال کنید.",
     "send-chat": "ارسال",
     "upload-chat": "<i class=\"las la-file-upload\"></i> آپلود فایل",
     "add-group-chat": "ایجاد اتاق",
@@ -264,7 +264,7 @@
     "publish-via-whip": "انتشار از طریق WHIP",
     "share-whepsrc": "اشتراک از طریق WHEP",
     "enter-the-whep-URL-you-wish-to-share": "URL WHEP که می‌خواهید به اشتراک بگذارید را وارد کنید.",
-    "info-blob": "<h2><i class='las la-video'></i> Remote Video Monitoring <i class='las la-eye'></i></h2><br><ul><li><i class='las la-check-circle'></i> <b>مناسب برای لایو استریم، آزمون‌های آنلاین و آموزش از راه دور</b></li><li><i class='las la-lock'></i> بدون نیاز به نصب برنامه، ثبت‌نام یا وارد کردن اطلاعات شخصی</li><li><i class='las la-shield-alt'></i> حفظ حریم خصوصی + <i class='las la-stopwatch'></i> تأخیر بسیار پایین با تکنولوژی پیشرفته</li></ul><br><p><i class='las la-star'></i> تجربه‌ای نو از استریم سریع، ایمن و بدون مرز — Live.RemoteVm <i class='las la-globe'></i><i class='las la-bolt'></i></p>",
+    "info-blob": "<h2> Remote Video monitoring 🎥</h2><br><ul><li></li> <b>مناسب برای لایو استریم، آزمون‌های آنلاین و آموزش از راه دور</b><li> ارسال و دریافت ویدیوی زنده از طریق گوشی، لپ‌تاپ یا دسکتاپ —  OBS Studio </li>؛ بدون نیاز به نصب برنامه، ثبت‌نام یا وارد کردن اطلاعات شخصی 🔐<li> </li></ul><br><p>✨ تجربه‌ای استریم سریع، ایمن و بدون مرز —  Live.RemoteVm  🌐⚡</p><br><h3>🧰 برای پشتیبانی و کنترل ریموت آزمون‌ها،  <a href=\"https://RemoteVm.site/\" target=\"_blank\">Remote Vm <i class=\"lab la-reddit-alien\"></i></a>  📘</h3>",
     "guest-1": "مهمان 1",
     "guest-2": "مهمان 2",
     "guest-3": "مهمان 3",
@@ -565,11 +565,11 @@
     "more-options": "گزینه‌های بیشتر",
     "transfer-any-file": "انتقال هر فایل",
     "enter-an-https-url": "وارد کردن URL HTTPS",
-    "open-a-youtube-video-demoing-the-basics-of-RVM": "باز کردن ویدیوی یوتیوب برای نمایش اصول Live.Remotevm.ir",
+    "open-a-youtube-video-demoing-the-basics-of-vdo-ninja": "باز کردن ویدیوی یوتیوب برای نمایش اصول Live.Remotevm.ir",
     "for-a-list-of-common-or-known-issues-click-here": "برای لیست مشکلات رایج یا شناخته‌شده اینجا کلیک کنید",
-    "click-to-link-out-to-the-rvm-help-guide-for-common-obs-studio-problems": "برای راهنمای Live.Remotevm.ir برای مشکلات رایج OBS Studio کلیک کنید",
+    "click-to-link-out-to-the-vdo-ninja-help-guide-for-common-obs-studio-problems": "برای راهنمای Live.Remotevm.ir برای مشکلات رایج OBS Studio کلیک کنید",
     "open-a-page-with-recent-vdo-ninja-development-and-feature-updates": "باز کردن صفحه‌ای با به‌روزرسانی‌های اخیر توسعه و ویژگی‌های Live.Remotevm.ir",
-    "info-on-the-native-app-versions-of-rvm": "اطلاعات درباره نسخه‌های اپلیکیشن بومی Live.Remotevm.ir",
+    "info-on-the-native-app-versions-of-vdo-ninja": "اطلاعات درباره نسخه‌های اپلیکیشن بومی Live.Remotevm.ir",
     "mute-the-speaker": "بی‌صدا کردن بلندگو",
     "mute-the-mic": "بی‌صدا کردن میکروفون",
     "disable-the-camera": "غیرفعال کردن دوربین",
@@ -600,7 +600,7 @@
     "100-battery-remaining": "100٪ باتری باقی‌مانده",
     "for-more-known-issues-click-here": "برای مشکلات شناخته‌شده بیشتر اینجا کلیک کنید",
     "previously-was-29-970029830932617": "قبلاً: 29.970029830932617",
-    "link-out-to-the-rvm-help-guide-for-obs-studio": "لینک به راهنمای Live.Remotevm.ir برای OBS Studio",
+    "link-out-to-the-vdo-ninja-help-guide-for-obs-studio": "لینک به راهنمای Live.Remotevm.ir برای OBS Studio",
     "will-slowly-pan-tilt-and-zoom-in-on-the-first-face-detected": "به‌آرامی روی اولین چهره شناسایی‌شده حرکت، شیب و زوم می‌کند",
     "load-a-website-url": "بارگذاری URL وب‌سایت",
     "optional": "اختیاری"
@@ -731,6 +731,6 @@
     "system-default": "پیش‌فرض سیستم",
     "streamid-already-published-obvious": "شناسه استریمی که به آن منتشر می‌کنید قبلاً در حال استفاده است.\n\nلطفاً از رمز عبور یا شناسه استریم متنوع‌تر/منحصربه‌فرد استفاده کنید تا از این مشکل جلوگیری شود.\n\nاکنون قطع خواهید شد.",
     "insecure-stream-id": "⚠️ شناسه استریم ناامن شناسایی شد\n\nاکیداً توصیه می‌شود که اگر از شناسه استریم کوتاه و غیرمنحصربه‌فرد استفاده می‌کنید، رمز عبور استفاده شود.\n\nاین فقط یک هشدار است که می‌توان نادیده گرفت.",
-    "mobile-no-screen-share": "متأسفیم، مرورگر موبایل شما از اشتراک صفحه پشتیبانی نمی‌کند.\n\n<a href='https://about.remotevm.ir/docs/' target='_blank'>اپلیکیشن‌های بومی</a> پشتیبانی اولیه‌ای برای آن ارائه می‌دهند."
+    "mobile-no-screen-share": "متأسفیم، مرورگر موبایل شما از اشتراک صفحه پشتیبانی نمی‌کند.\n\n<a href='https://docs.vdo.ninja/getting-started/native-mobile-app-versions' target='_blank'>اپلیکیشن‌های بومی</a> پشتیبانی اولیه‌ای برای آن ارائه می‌دهند."
   }
 }
